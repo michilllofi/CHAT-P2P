@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ứng dụng chat P2P</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="peerjs.min.js"></script>
+  <script defer src="index.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="c1">
+        <label>My ID:</label>
+        <input disabled type="text" id="my-id">
+      </div>
+      <div class="c2">
+        <label>Neighbor ID:</label>
+        <input type="text" id="neighbor-id">
+        <button id="add-neighbor">Add Neighbor</button>
+      </div>
+    </header>
+
+    <main id="chat"></main>
+
+    <footer>
+      <input type="text" id="dst" placeholder="Destination ID">
+      <textarea id="msg" placeholder="Nhập tin nhắn..."></textarea>
+      <button id="send">Send</button>
+    </footer>
+  </div>
+</body>
+</html>
