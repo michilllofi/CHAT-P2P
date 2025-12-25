@@ -1,0 +1,164 @@
+/* ===== Body & Container ===== */
+body {
+  background: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* ===== Header ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #0078d7;
+  color: #fff;
+}
+
+header .c1,
+header .c2 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* ===== Main chat area ===== */
+main {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  background: #fafafa;
+}
+
+/* ===== Footer ===== */
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background: #eee;
+}
+
+footer textarea {
+  resize: none;
+  height: 60px;
+  margin-bottom: 5px;
+}
+
+/* ===== Message Bubble ===== */
+.my-msg-container,
+.friend-msg-container {
+  margin: 6px 0;
+}
+
+.my-msg-container {
+  text-align: right;
+}
+
+.friend-msg-container {
+  text-align: left;
+}
+
+.message-bubble {
+  border-radius: 12px;
+  border: 1px solid black;
+  padding: 6px 10px;
+  display: inline-block;
+  max-width: 80%;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+
+/* Colors for My vs Friend */
+.my-message {
+  background: #dfffe0;
+  /* xanh nhạt */
+  border-color: #4caf50;
+}
+
+.friend-message {
+  background: #e9ecff;
+  /* tím nhạt */
+  border-color: #3f51b5;
+}
+
+/* Via text inside bubble */
+.message-bubble .via-text {
+  font-size: 10px;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* ===== Neighbor status ===== */
+#neighbors-status {
+  margin-top: 6px;
+  font-size: 12px;
+}
+
+#neighbors-list {
+  list-style: none;
+  padding: 0;
+  margin: 4px 0 0 0;
+}
+
+#neighbors-list li {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.status-online {
+  background: #2ecc71;
+}
+
+.status-offline {
+  background: #e74c3c;
+}
+
+/* ===== Logo ===== */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* ===== System log ===== */
+.log {
+  color: #666;
+  font-size: 12px;
+  margin: 4px 0;
+  font-weight: bold;
+}
+
+/* ===== Scroll behavior ===== */
+.my-msg,
+.friend-msg,
+.message-bubble {
+  white-space: pre-line;
+}
